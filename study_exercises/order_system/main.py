@@ -1,4 +1,4 @@
-# pylint: disable=C0114
+"""main"""
 from food import Food
 from drink import Drink
 from menu_item import MenuItem
@@ -16,7 +16,8 @@ drink3 = Drink('Espresso', 3, 30)
 drinks = [drink1, drink2, drink3]
 
 
-def main():  # pylint: disable=C0116
+def main():
+    """run main"""
     print('Food')
     index = 0
     for food in foods:

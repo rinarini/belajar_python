@@ -1,9 +1,11 @@
-# pylint: disable=C0114
+"""Drink Class"""
 from menu_item import MenuItem
 
-class Drink(MenuItem):  # pylint: disable=C0115
+class Drink(MenuItem):
+    """init drink"""
     def __init__(self, name, price, volume):
         super().__init__(name, price)
         self.volume = volume
-    def info(self):  # pylint: disable=C0116
+    def info(self):
+        """output info"""
         return self.name + ': $' + str(self.price) + ' (' + str(self.volume) + 'mL)'

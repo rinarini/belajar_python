@@ -3,7 +3,8 @@ import random
 import utils
 
 
-def main():  # pylint: disable=C0116
+def main():
+    """run main"""
     print('Starting the Rock Paper Scissors game!')
 
     player_name = input('Please enter your name: ')
